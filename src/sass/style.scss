@@ -1,7 +1,10 @@
 @import "variables";
 @import "mixins";
 @import "normalize";
+@import "global";
 @import "layout";
+
+@import "components/button";
 
 @import "components/form_field";
 @import "section/registration_form";

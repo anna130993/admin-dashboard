@@ -1,0 +1,48 @@
+.btn {
+    display: inline-block;
+    min-width: 160px;
+    margin: 24px auto 0 auto;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: $radius;
+    color: $color-light;
+    font-size: $size-button;
+    cursor: pointer;
+    font-weight: $font-regular;
+    line-height: 41px;
+    padding: 16px;
+    text-align: center;
+    text-decoration: none;
+    background-color: $color-warning;
+    transition: $transition;
+
+    &:hover {
+        background-color: $color-warning-l;
+        color: $color-light;
+    }
+
+    &--grey {
+        background-color: $color-greys-d;
+
+        &:hover {
+            background-color: $color-greys;
+        }
+    }
+
+    &--disabled {
+        background-color: $color-greys-l;
+        cursor: not-allowed;
+
+        &:hover {
+            background-color: $color-greys-l;
+        }
+    }
+
+    &--success {
+        background-color: $color-success-xl;
+
+        &:hover {
+            background-color: $color-success-xl;
+        }
+    }
+}

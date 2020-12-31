@@ -32,3 +32,55 @@ a {
         color: $color-warning-l;
     }
 }
+
+input, textarea {
+    border: 1px solid $color-greys-l;
+    border-radius: $radius;
+    cursor: pointer;
+    font-weight: $font-regular;
+
+    &::placeholder {
+        font-weight: $font-regular;
+        color: $color-greys;
+    }
+
+    &:hover {
+        border-color: $color-greys-d;
+        color: $color-dark;
+
+        &::placeholder {
+            color: $color-dark;
+        }
+    }
+
+    &:focus {
+        outline-color: $color-greys-d;
+    }
+}
+
+input {
+    line-height: $single-line-height;
+    padding: 0 $padding-text;
+
+    &[type="date"] {
+        &::-webkit-calendar-picker-indicator {
+            background: ".icon-calendar";
+            height: $size-icon;
+            width: $size-icon;
+        }
+
+        &::-webkit-datetime-edit-text {
+            content: ".";
+        }
+    }
+
+    &[type="password"] {
+        padding-left: 32px;
+        position: relative;
+    }
+}
+
+textarea {
+    padding: $padding-text;
+    font-size: $size-textarea;
+}

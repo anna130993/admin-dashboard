@@ -1,0 +1,9 @@
+.chart {
+    &--title {
+        @extend h2;
+    }
+
+    &--visual {
+        padding: 40px 17px 0 17px;
+    }
+}

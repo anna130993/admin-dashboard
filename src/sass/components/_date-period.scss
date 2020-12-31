@@ -1,0 +1,31 @@
+.date-period {
+    @extend input;
+    height: $single-line-height;
+    padding: 0 $padding-sm 0 0;
+    @include flex(row, center, space-between);
+
+    &--input {
+        position: relative;
+        border: none;
+        outline: none;
+        height: $single-line-height - 10px;
+        width: 50%;
+        min-width: 100px;
+        flex: 1;
+    }
+
+    &--input:first-child {
+        border-right: 1px solid $color-greys-l;
+        border-radius: 0;
+    }
+
+    &--icon {
+        @include icon();
+        flex: 0 0 auto;
+        fill: $color-greys;
+
+        &:hover {
+            fill: $color-dark;
+        }
+    }
+}

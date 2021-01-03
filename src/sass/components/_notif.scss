@@ -1,0 +1,21 @@
+.notif {
+    position: relative;
+
+    &__status {
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        height: 10px;
+        width: 10px;
+        border-radius: 50%;
+
+        &--l {
+            height: 14px;
+            width: 14px;
+        }
+
+        &--active {
+            background-color: $color-success;
+        }
+    }
+}

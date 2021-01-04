@@ -4,28 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Dash</title>
+    <link href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-md fixed-top navbar-light bg-light">
-        <a class="navbar-brand" href="#">Just do it</a>    
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mobile-menu" aria-controls="mobile-menu" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="mobile-menu">
-            <div class="btn-group ml-auto" role="group" aria-label="Basic example">
-                <button type="button" class="btn btn-light"><i class="icon-general"></i> General</button>
-                <button type="button" class="btn btn-light"><i class="icon-details"></i> Details</button>
-                <button type="button" class="btn btn-light"><i class="icon-links"></i> Links</button>
-                <button type="button" class="btn btn-light"><i class="icon-banners"></i> Banners</button>
-                <button type="button" class="btn btn-light"><i class="icon-personal-data"></i> Personal data</button>
-                <button type="button" class="btn btn-light"><i class="icon-payout"></i> Payout</button>
-                <button type="button" class="btn btn-light"><i class="icon-postback"></i> Postback</b11utton>
+    <nav class="navbar">
+        <div class="header">
+            <a class="navbar__brand" href="#">Just do it</a>
+            <i class="header__toggle-menu fas fa-bars"></i>
+        </div>
+        <div class="sidebar">
+            <div class="sidebar__section">
+                <ul class="sidebar__menu">
+                    <li class="sidebar__menu-item">
+                        <a href="#"><i class="icon-general"></i>General</a>
+                    </li>
+                    <li class="sidebar__menu-item">
+                        <a href="#"><i class="icon-details"></i>Details</a>
+                    </li>
+                    <li class="sidebar__menu-item">
+                        <a href="#"><i class="icon-links"></i>Links</a>
+                    </li>
+                    <li class="sidebar__menu-item">
+                        <a href="#"><i class="icon-banners"></i>Banners</a>
+                    </li>
+                    <li class="sidebar__menu-item">
+                        <a href="#"><i class="icon-personaldata"></i>Personal data</a>
+                    </li>
+                    <li class="sidebar__menu-item">
+                        <a href="#"><i class="icon-payout"></i>Payout</a>
+                    </li>
+                    <li class="sidebar__menu-item">
+                        <a href="#"><i class="icon-postback"></i>Postback</a>
+                    </li>
+                </ul>
             </div>
         </div>
-        <div class="navbar__section">
-            <h1 class="navbar__section__title">YOUR MANAGER</h1>
-            <div class="navbar__manager">
+        <div class="sidebar__section">
+            <h1 class="sidebar__section__title">YOUR MANAGER</h1>
+            <div class="sidebar__manager">
                 <div class="notif">
                     <i class="icon-avatar"></i>
                     <div class="notif__status notif__status--l notif__status--active"></div>
@@ -35,31 +53,186 @@
         </div>
     </nav>
     <section class="upper-bar">
-        <button type="button" class="btn btn-light"><i class="icon-wallet">$1,500.00</i><i class="icon-arrow-down-small"></i></button>
-        <button type="button" class="btn btn-light"><i class="icon-notification"></i></button>
-        <button type="button" class="btn btn-light"><i class="icon-profile">Leonardo Dicaprio</i></button>
-        <button type="button" class="btn btn-light"><i class="icon-quit"></i></button>
+        <div class="upper-bar__section">
+            <div class="upper-bar__section__item">
+                <button type="button" class="btn btn-light"><i class="icon-wallet">$1,500.00</i><i class="icon-arrow-down-small"></i></button>
+            </div>
+            <div class="upper-bar__section__item">
+                <button type="button" class="btn btn-light"><i class="icon-notification"></i></button>
+            </div>
+            <div class="upper-bar__section__item">
+                <button type="button" class="btn btn-light"><i class="icon-profile">Leonardo Dicaprio</i></button>
+            </div>
+            <div class="upper-bar__section__item">
+                <button type="button" class="btn btn-light"><i class="icon-quit"></i></button>
+            </div>
+        </div>
     </section>
     <section class="general">
-        <h3>GENERAL STATISTICS</h3>
-        <div class="row">
-            
+        <div class="container">
+            <div class="section__row section__row--left">
+                <h1>GENERAL STATISTICS</h1>
+            </div>
+            <div class="section__row date-period__wrapper">
+            <div>
+            <form class="date-period">
+                <input class="date-period__input" name="start_date" type="text" placeholder="dd.mm.yy" value="16.05.2016">
+                <input class="date-period__input" name="start_date" type="text" placeholder="dd.mm.yy" value="16.05.2016">
+                <i class="icon-calendar"></i>
+            </form>
+        </div>
+        <button class="btn btn--square">
+            <i class="icon-refresh"></i>
+        </button>
+        </div>
+        <div class="section__row section__row--naked table__wrapper">
+            <div class="section__col">
+                <table class="table">
+                    <tr class="table__row">
+                        <td class="table__header">Visit Signups</td>
+                        <td>124</td>
+                    </tr>
+                    <tr class="table__row">
+                        <td class="table__header">FTD</td>
+                        <td>445</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="section__col">
+                <table class="table">
+                    <tr class="table__row">
+                        <td class="table__header">Net deposit</td>
+                        <td>564</td>
+                    </tr>
+                    <tr class="table__row">
+                        <td class="table__header">Turn over</td>
+                        <td>432</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="section__row section__row--naked">
+            <div class="chart__wrapper">
+                <figure class="chart">
+                    <figcaption class="chart__title">Earnings chart</figcaption>
+                </figure>
+            </div>
         </div>
     </section>
     <section class="sect-links">
-        <button type="button" class="btn btn--warning"><p>+ add new</p></button>
-        <ul class="links-list">
-            <li><p>Home page</p><a href="#">http://www.homepage.com</a></li>
-            <li><p>Currently offer</p><a href="#">http://www.currently.com</a></li>
-            <li><p>Blurpix</p><a href="#">http://www.blurpix.com</a></li>
-            <li><p>Your site</p><a href="#">http://www.yoursite.com</a></li>
-            <li><p>Google</p><a href="#">http://www.google.com</a></li>
-            <li><p>Facebook</p><a href="#">http://www.facebook.com</a></li>
-            <li><p>Dashboard</p><a href="#">http://www.dashboard.com</a></li>
-            <li><p>Blurax</p><a href="#">http://www.blurax.com</a></li>
-            <li><p>Piece of Wine</p><a href="#">http://www.pieceofwine.com</a></li>
-            <li><p>Twitter</p><a href="#">http://www.twitter.com</a></li>
-        </ul>
+        <div class="container">
+            <div class="section__row section__row--left">
+                <h1>Links</h1>
+            </div>
+            <div class="section__row section__row--vertical section__row--naked">
+                <button type="button" class="btn btn--warning"><p>+ add new</p></button>
+            <div class="table__wrapper">
+                <table class="table">
+                    <tr class="table__row">
+                        <td class="table__header">Home page</td>
+                        <td><a href="#">http://www.homepage.com</a></td>
+                        <td>
+                            <div class="table__icon"><i class="icon-links"></i></div>
+                        </td>
+                        <td>
+                            <div class="table__icon"><i class="icon-trash"></i></div>
+                        </td>
+                    </tr>
+                    <tr class="table__row">
+                        <td class="table__header">Currently offer</td>
+                        <td><a href="#">http://www.currently.com</a></td>
+                        <td>
+                            <div class="table__icon"><i class="icon-links"></i></div>
+                        </td>
+                        <td>
+                            <div class="table__icon"><i class="icon-trash"></i></div>
+                        </td>
+                    </tr>
+                    <tr class="table__row">
+                        <td class="table__header">Blurpix</td>
+                        <td><a href="#">http://www.blurpix.com</a></td>
+                        <td>
+                            <div class="table__icon"><i class="icon-links"></i></div>
+                        </td>
+                        <td>
+                            <div class="table__icon"><i class="icon-trash"></i></div>
+                        </td>
+                    </tr>
+                    <tr class="table__row">
+                        <td class="table__header">Your Site</td>
+                        <td><a href="#">http://www.yoursite.com</a></td>
+                        <td>
+                            <div class="table__icon"><i class="icon-links"></i></div>
+                        </td>
+                        <td>
+                            <div class="table__icon"><i class="icon-trash"></i></div>
+                        </td>
+                    </tr>
+                    <tr class="table__row">
+                        <td class="table__header">Google</td>
+                        <td><a href="#">http://www.google.com</a></td>
+                        <td>
+                            <div class="table__icon"><i class="icon-links"></i></div>
+                        </td>
+                        <td>
+                            <div class="table__icon"><i class="icon-trash"></i></div>
+                        </td>
+                    </tr>
+                    <tr class="table__row">
+                        <td class="table__header">Facebook</td>
+                        <td><a href="#">http://www.facebook.com</a></td>
+                        <td>
+                            <div class="table__icon"><i class="icon-links"></i></div>
+                        </td>
+                        <td>
+                            <div class="table__icon"><i class="icon-trash"></i></div>
+                        </td>
+                    </tr>
+                    <tr class="table__row">
+                        <td class="table__header">Dashboard</td>
+                        <td><a href="#">http://www.dashboard.com</a></td>
+                        <td>
+                            <div class="table__icon"><i class="icon-links"></i></div>
+                        </td>
+                        <td>
+                            <div class="table__icon"><i class="icon-trash"></i></div>
+                        </td>
+                    </tr>
+                    <tr class="table__row">
+                        <td class="table__header">Blurax</td>
+                        <td><a href="#">http://www.blurax.com</a></td>
+                        <td>
+                            <div class="table__icon"><i class="icon-links"></i></div>
+                        </td>
+                        <td>
+                            <div class="table__icon"><i class="icon-trash"></i></div>
+                        </td>
+                    </tr>
+                    <tr class="table__row">
+                        <td class="table__header">Piece of Wine</td>
+                        <td><a href="#">http://www.pieceofwine.com</a></td>
+                        <td>
+                            <div class="table__icon"><i class="icon-links"></i></div>
+                        </td>
+                        <td>
+                            <div class="table__icon"><i class="icon-trash"></i></div>
+                        </td>
+                    </tr>
+                    <tr class="table__row">
+                        <td class="table__header">Twitter</td>
+                        <td><a href="#">http://www.twitter.com</a></td>
+                        <td>
+                            <div class="table__icon"><i class="icon-links"></i></div>
+                        </td>
+                        <td>
+                            <div class="table__icon"><i class="icon-trash"></i></div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <button type="button" class="btn btn--warning"><p>+ add new</p></button>
+        </div>
     </section>
+    <script src="./js/script.js" type="module"></script>
 </body>
 </html>

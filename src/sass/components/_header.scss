@@ -1,0 +1,27 @@
+.header {
+  background-color: $color-dark;
+  @include flex (row, center, space-between);
+  height: $size-upper-bar;
+  width: 100%;
+  padding: 0 $padding-text;
+
+  &__toggle-menu {
+    color: $color-greys-l;
+    font-size: 23px;
+    cursor: pointer;
+
+    &:hover {
+      color: $color-light;
+    }
+  }
+}
+
+@media only screen and (min-width: $mobile) and (min-height: $sidebar-max) {
+  .header {
+    width: $size-sidebar;
+
+    &__toggle-menu {
+      display: block;
+    }
+  }
+}

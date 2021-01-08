@@ -1,9 +1,13 @@
 .chart {
-    &--title {
+    width: 100%;
+    margin: 0;
+
+    &__title {
         @extend h2;
     }
 
-    &--visual {
+    &__visual {
         padding: 40px 17px 0 17px;
+        width: 100%;
     }
 }

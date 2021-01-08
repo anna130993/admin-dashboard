@@ -1,6 +1,6 @@
 .btn {
     display: inline-block;
-    min-width: 160px;
+    min-width: $size-button;
     margin: 24px auto 0 auto;
     border-width: 2px;
     border-style: solid;
@@ -44,5 +44,14 @@
         &:hover {
             background-color: $color-success-xl;
         }
+    }
+
+    &--square {
+        width:$single-line-height;
+        padding: 0;
+    }
+
+    &__icon {
+        font-size: $size-icon;
     }
 }

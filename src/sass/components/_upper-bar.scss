@@ -1,0 +1,67 @@
+.upper-bar {
+  &__button {
+    @extend .sidebar__section;
+    @include flex (row, center, space-evenly);
+    padding-bottom: $padding-text/4;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    font-weight: $font-regular;
+    background-color: inherit;
+    outline: none;
+    width: 100%;
+
+    &:hover {
+      background-color: transparentize($color-greys-d, 0.8);
+      color: $color-light;
+      cursor: pointer;
+
+      i {
+        color: inherit;
+      }
+
+      .upper-bar__balance {
+        color: inherit;
+      }
+    }
+
+    &__item {
+      padding: $padding-sm/2;
+    }
+  }
+
+  &__icon {
+    color: $color-header;
+    font-size: $size-icon;
+
+    &--sm {
+      font-size: $size-icon-sm;
+    }
+  }
+
+  &__balance {
+    @extend h1;
+  }
+}
+
+@media only screen and (min-width: $mobile) and (min-height: $sidebar-max) {
+  .upper-bar {
+    background-color: $color-light;
+    @include flex (row, center, flex-end);
+    border-bottom: $border-style $color-greys-l;
+
+    &__button {
+      padding: 0 $padding-sm;
+      height: 100%;
+      border-left: $border-style $color-greys-l;
+      border-bottom: none;
+      width: auto;
+
+      &:hover {
+        background-color: $color-greys-xl;
+        color: $color-header;
+
+      }
+    }
+  }
+}

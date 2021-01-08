@@ -15,12 +15,14 @@ $color-success-xl: #FDA7DF;
 $color-danger: #ff3838;
 $color-danger-l: #e84118;
 $color-danger-xl: #c23616;
+$color-active: #27ae60;
+$color-busy: #c0392b;
 
 /* Font sizes */
 $size-text: 16px;
 $size-textarea: 14px;
 $size-link: 15px;
-$size-header: 20px;
+$size-header: 18px;
 $size-button: 17px;
 
 /* Font weight */
@@ -33,12 +35,22 @@ $font-main: 'Montserrat', sans-serif;
 
 /* Borders */
 $radius: 5px;
+$border-style: 0.7px solid;
 
 /* Transitions */
 $transition: all 3s;
 
 /* Sizes */
-$single-line-height: 41px;
+$single-line-height: 35px;
 $padding-text: 20px;
 $padding-sm: 15px;
-$size-icon: 13px;
+$size-icon: 17px;
+$size-icon-sm: 10px;
+$size-sidebar: 190px;
+$size-upper-bar: 60px;
+$size-table: 620px;
+
+/*Breakpoints */
+$sm: 600px;
+$mobile: 768px;
+$sidebar-max: 736px;

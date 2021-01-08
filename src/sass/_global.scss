@@ -7,10 +7,12 @@ body {
     color: $color-dark;
     font-size: $size-text;
     font-weight: $font-regular;
+    background-color: $color-greys-xl;
 }
 
 h1, h2, h3, h4, h5, h6 {
     color: $color-header;
+    margin: 0;
 }
 
 h1 {
@@ -21,6 +23,7 @@ h1 {
 
 h2 {
     font-size: $size-header;
+    font-weight: $font-xbold;
 }
 
 a {
@@ -61,23 +64,6 @@ input, textarea {
 input {
     line-height: $single-line-height;
     padding: 0 $padding-text;
-
-    &[type="date"] {
-        &::-webkit-calendar-picker-indicator {
-            background: ".icon-calendar";
-            height: $size-icon;
-            width: $size-icon;
-        }
-
-        &::-webkit-datetime-edit-text {
-            content: ".";
-        }
-    }
-
-    &[type="password"] {
-        padding-left: 32px;
-        position: relative;
-    }
 }
 
 textarea {

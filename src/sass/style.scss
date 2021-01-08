@@ -4,12 +4,14 @@
 @import "global";
 @import "layout";
 
-@import "components/button";
-@import "components/icons";
-@import "components/chart";
-@import "components/date-period";
-@import "components/notif";
+@import "./components/button";
+@import "./components/chart";
+@import "./components/date-period";
+@import "./components/notif";
+@import "./components/header";
+@import "./components/sidebar";
+@import "./components/upper-bar";
+@import "./components/table";
 
-@import "components/form_field";
-@import "section/registration_form";
-@import "pages/registration";
+@import "./pages/statistics";
+@import "./pages/links";

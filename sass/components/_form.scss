@@ -1,0 +1,62 @@
+.form {
+    &__input-group {
+        border-bottom: $border-style $color-greys-l;
+    }
+
+    &__field {
+        @include flex (row, center, space-between);
+        padding: $padding-text/2;
+
+        &__label {
+            font-size: 15px;
+            font-weight: 400;
+            cursor: pointer;
+        }
+
+        &__input {
+            border: 1px solid $color-greys-l;
+            border-radius: $radius;
+            cursor: pointer;
+            width: 200px;
+            right: 50px;
+
+            &::placeholder {
+                color: $color-greys;
+            }
+
+            &:hover {
+                border-color: $color-greys-d;
+                color: $color-dark;
+
+                &::placeholder {
+                    outline-color: $color-dark;
+                }
+            }
+
+            &:focus {
+                outline-color: $color-greys-d;
+            }
+
+            &--password {
+                padding-left: 51px;
+            }
+
+            &--modal {
+                width: 100%;
+                padding: 10px;
+                text-align: center;
+            }
+        }
+    }
+
+    .invalid {
+        border: 2px solid $color-danger;
+        outline: $color-danger;
+
+        &:hover {
+            border-color: $color-danger;
+        }
+    }
+
+    
+}

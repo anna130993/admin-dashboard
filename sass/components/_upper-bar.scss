@@ -1,0 +1,70 @@
+.upper-bar {
+  @include flex (row, center, space-between);
+  flex-wrap: wrap;
+
+  &__button {
+    @include flex (row, center, space-evenly);
+    padding: $padding-text/4;
+    border: none;
+    font-weight: $font-regular;
+    background-color: inherit;
+    outline: none;
+    flex: 1 1 auto;
+    min-width: $single-line-height - 5px;
+
+    &:hover {
+      background-color: transparentize($color-greys-d, 0.8);
+      color: $color-light;
+      cursor: pointer;
+
+      i {
+        color: inherit;
+      }
+
+      .upper-bar__balance {
+        color: inherit;
+      }
+    }
+
+    &__item {
+      padding: $padding-sm/2;
+
+      p {
+        margin: 0;
+      }
+    }
+  }
+
+  &__icon {
+    color: $color-header;
+    font-size: $size-icon;
+
+    &--sm {
+      font-size: $size-icon-sm;
+    }
+  }
+
+  &__balance {
+    @extend h1;
+  }
+}
+
+@media only screen and (min-width: $sm) and (min-height: $sm-height) {
+  .upper-bar {
+    background-color: $color-light;
+    @include flex (row, center, flex-end);
+    border-bottom: $border-style $color-greys-l;
+
+    &__button {
+      background-color: $color-light;
+      padding: 0 10px;
+      height: 100%;
+      flex: 0 0 auto;
+
+      &:hover {
+        background-color: $color-greys-xl;
+        color: $color-light;
+      }
+    }
+  }
+}

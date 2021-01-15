@@ -1,0 +1,51 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $font-main;
+    color: $color-dark;
+    font-size: $size-text;
+    font-weight: $font-regular;
+    background-color: $color-greys-xl;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: $color-header;
+    margin: 0;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-size: $size-header;
+    font-weight: $font-bold;
+}
+
+h2 {
+    font-size: $size-header;
+    font-weight: $font-xbold;
+}
+
+a {
+    color: $color-link;
+    text-decoration: none;
+    cursor: pointer;
+
+    &:hover{
+        color: $color-warning-l;
+    }
+}
+
+input, textarea {
+    font-weight: $font-regular;
+
+    &::placeholder {
+        font-weight: $font-regular;
+    }
+}
+
+fieldset {
+    padding: 0;
+    margin: 0;
+    border: none;
+}

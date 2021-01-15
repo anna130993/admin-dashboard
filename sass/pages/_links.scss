@@ -1,0 +1,45 @@
+.links {
+    .table__wrapper {
+      padding: $padding-text 0;
+      overflow-x: auto;
+    }
+  
+    table {
+      .table__icon {
+        color: $color-greys-d;
+  
+        &:hover {
+          color: $color-warning;
+        }
+      }
+  
+      tr td:last-child {
+        white-space: nowrap;
+        width: 1%;
+        padding-left: $padding-text/2;
+      }
+  
+      tr td:nth-child(3) {
+        white-space: nowrap;
+        width: 1%;
+        padding-right: $padding-text/2;
+      }
+    }
+  }
+  
+  @media only screen and (max-width: $sm) {
+    .links {
+      .table {
+        font-size: 0.95em;
+  
+        &__header {
+          font-size: 0.95em;
+        }
+  
+        td {
+          padding-left: 5px;
+          padding-right: 5px;
+        }
+      }
+    }
+  }

@@ -1,0 +1,105 @@
+.sidebar {
+    background-color: $color-dark;
+  
+    &__section {
+      padding: $padding-text/2 0 $padding-text 0;
+      border-bottom: $border-style $color-header;
+  
+      &--first {
+        padding-top: $padding-text;
+      }
+  
+      &__title {
+        @extend h1;
+        padding: $padding-text/2 $padding-text;
+        color: $color-light;
+      }
+    }
+  
+    &__menu-item {
+      display: block;
+      line-height: $single-line-height;
+      padding: 0 $padding-text;
+      border-left: 5px solid transparent;
+      color: $color-header;
+  
+      &:hover {
+        background-color: transparentize($color-greys-d, 0.8);
+        color: $color-light;
+      }
+  
+      span {
+        padding-left: $padding-sm;
+        line-height: $single-line-height;
+        color: $color-light;
+      }
+  
+      i {
+        font-size: $size-icon;
+        color: $color-light;
+      }
+  
+      &--active {
+        border-color: $color-warning;
+        background-color: transparentize($color-greys-d, 0.8);
+      }
+  
+    }
+  
+    &__manager {
+      padding: $padding-text/2 $padding-text;
+      @include flex (row, center, flex-start);
+  
+      img {
+        padding-right: $padding-text/2;
+      }
+  
+    }
+  }
+  
+  @media only screen and (orientation: landscape) and (max-height: 420px) {
+    .sidebar {
+      &__menu-item {
+        width: auto;
+      }
+    }
+  }
+  
+  @media only screen and (min-width: $mobile) and (min-height: $sidebar-max) {
+    .sidebar {
+      &__section {
+        padding: $padding-text/2 0 $padding-text 0;
+  
+        &--first {
+          padding-bottom: inherit;
+        }
+      }
+  
+      &__menu-item {
+        padding: 0 $padding-text;
+        text-align: left;
+        display: block;
+        line-height: $single-line-height;
+  
+        &--active {
+          border-color: $color-warning;
+          background-color: transparentize($color-greys-d, 0.8);
+        }
+  
+        i {
+          font-size: $size-icon;
+          display: initial;
+        }
+  
+        span {
+          display: inline;
+          padding-left: $padding-sm;
+        }
+      }
+  
+      &__manager {
+        padding: $padding-text/2 $padding-text;
+        height: auto;
+      }
+    }
+  }

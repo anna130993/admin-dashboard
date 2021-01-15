@@ -1,0 +1,68 @@
+.btn {
+    display: inline-block;
+    margin: 24px auto 0 auto;
+    padding: 16px;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border-width: 2px;
+    border-style: solid;
+    background-position: 100% 0;
+    background-size: 300%;
+    background-color: transparent;
+    transition: $transition;
+    
+    &:hover {
+        background-position: 0 100%;
+        background-color: $color-warning-l;
+        color: $color-greys;
+    }
+
+    &__icon {
+        font-size: $size-icon;
+    }
+
+    &--quit {
+        position: relative;
+        text-align: center;
+        padding: 0px;
+        height: 50px;
+        width: 80px;
+        left: 42px;
+    }
+
+    &--login {
+        position: relative;
+        left: 70px;
+        height: 50px;
+        width: 70px;
+        text-align: center;
+        padding: 0px;
+    }
+
+    &--chat {
+        position: relative;
+        text-align: center;
+        padding: 0;
+        height: 50px;
+        width: 70px;
+        left: 35px;
+    }
+
+    &--links {
+        position: relative;
+        left: 200px;
+    }
+
+    &--dp {
+        position: relative;
+        margin-left: 8px;
+        margin-bottom: 17px;
+        height: 35px;
+        width: 35px;
+        text-align: center;
+        padding: 0;
+    }
+}

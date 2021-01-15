@@ -8,7 +8,8 @@
         padding: $padding-text/2;
 
         &__label {
-            @extend h2;
+            font-size: 15px;
+            font-weight: 400;
             cursor: pointer;
         }
 
@@ -16,7 +17,8 @@
             border: 1px solid $color-greys-l;
             border-radius: $radius;
             cursor: pointer;
-            width: 100%;
+            width: 200px;
+            right: 50px;
 
             &::placeholder {
                 color: $color-greys;
@@ -38,15 +40,11 @@
             &--password {
                 padding-left: 51px;
             }
-        }
 
-        &__input-wrapper {
-            position: relative;
-
-            &:hover {
-                .password-icon {
-                    color: $color-dark;
-                }
+            &--modal {
+                width: 100%;
+                padding: 10px;
+                text-align: center;
             }
         }
     }
@@ -60,13 +58,5 @@
         }
     }
 
-    .password-icon {
-        z-index: 1;
-        color: $color-greys;
-        position: absolute;
-        top: 50%;
-        left: $padding-sm;
-        transform: translateY(-50%);
-        pointer-events: none;
-    }
+    
 }

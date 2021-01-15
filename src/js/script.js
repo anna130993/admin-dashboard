@@ -6,6 +6,7 @@ const app = {
     this.initActions();
     this.initPages();
     this.initChart();
+    this.generalModals();
   },
 
   getElements: function() {
@@ -59,7 +60,46 @@ const app = {
     }
   },
 
-  initChart: function(){
+  generalModals: function() {
+    const modalLinks = document.querySelectorAll('a[href^="#modal-"]');
+
+    for(const link of modalLinks) {
+      link.addEventListener('click', function(event) {
+        event.preventDefault();
+        showModal(link.getAttribute('href'));
+      })
+    }
+
+    function showModal(modalId) {
+      document.querySelectorAll('#overlay > *').forEach(function(modal) {
+        modal.classList.remove('show')
+      })
+      document.querySelector('#overlay').classList.add('show')
+      document.querySelector(modalId).classList.add('show')
+    }
+
+    function closeModal() {
+      document.getElementById('overlay').classList.remove('show')
+    }
+    document.querySelectorAll('#overlay .js--close-modal').forEach(function(btn) {
+      btn.addEventListener('click', function(e) {
+        e.preventDefault()
+        closeModal()
+      })
+    })
+    document.querySelector('#overlay').addEventListener('click', function(e) {
+      if(e.target === this) {
+        closeModal()
+      }
+    })
+    document.addEventListener('keyup', function(e) {
+      if(e.keyCode === 27) {
+        closeModal()
+      }
+    })
+  },
+
+  initChart: function() {
     var ctx = document.getElementById('myChart').getContext('2d');
 
     var chart = new Chart(ctx, {
@@ -88,6 +128,6 @@ const app = {
       },
   });
   }
-
+  
 }
 app.init();

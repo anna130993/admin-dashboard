@@ -55,12 +55,12 @@
                             <img src="./images/photo.png" alt="manager avatar">
                             <div class="notif__status notif__status--big notif__status--active"></div>
                         </div>
-                        <a href="#">Mikhael E.</a>
+                        <a href="#modal-chat">Mikhael E.</a>
                     </div>
                 </section>
             </div>
             <nav class="upper-bar">
-                <a class="upper-bar__button">
+                <a class="upper-bar__button" href="#modal-login">
                     <div class="upper-bar__button__item">
                         <i class="icon-wallet upper-bar__icon"></i>
                     </div>
@@ -87,7 +87,7 @@
                         <p>Leonardo Dicaprio</p>
                     </div>
                 </a>
-                <a class="upper-bar__button">
+                <a class="upper-bar__button" href="#modal-quit">
                     <div class="upper-bar__button__item">
                         <i class="icon-quit upper-bar__icon"></i>
                     </div>
@@ -107,7 +107,7 @@
                         <input class="date-period__input" name="end_date" type="text" placeholder="dd.mm.yy" value="16.05.2016">
                         <i class="icon-calendar date-period__icon"></i>
                     </div>
-                    <button class="btn btn--square date-period__btn">
+                    <button class="btn btn--dp">
                         <i class="button__icon icon-refresh"></i>
                     </button>
                 </form>
@@ -149,7 +149,7 @@
             </div>
             <div class="main__section__row main__section__row--naked">
                 <div class="col-sm-12 col-lg-10 col-xl-8">
-                <button class="btn">+ add new</button>
+                <button class="btn btn--links">+ add new</button>
             <div class="table__wrapper scroll__wrapper">
                 <table class="table">
                     <tr class="table__row">
@@ -254,7 +254,7 @@
                         </tr>
                     </table>
                 </div>
-                <button class="btn">+ add new</button>
+                <button class="btn btn--links">+ add new</button>
                 </div>
             </div>
         </section>
@@ -264,7 +264,7 @@
             </div>
             <div class="main__section__row main__section__row--naked">
                 <div class="col-sm-12 col-lg-10 col-xl-8">
-                <button class="btn">+ add new</button>
+                <button class="btn btn--links">+ add new</button>
             <div class="table__wrapper scroll__wrapper">
                 <table class="table">
                     <tr class="table__row">
@@ -329,7 +329,7 @@
                         </tr>
                     </table>
                 </div>
-                <button class="btn">+ add new</button>
+                <button class="btn btn--links">+ add new</button>
                 </div>
             </div>
         </section>
@@ -342,27 +342,19 @@
                 <div class="col-sm-11 col-md-9 col-lg-6 col-xl-5">
                   <div class="form__field">
                     <label class="form__field__label" for="name">Name</label>
-                    <div class="form__field__input-wrapper">
-                      <input class="form__field__input" type="text" name="name" id="name" value="Leonardo" required>
-                    </div>
+                    <input class="form__field__input" type="text" name="name" id="name" value="Leonardo" required>
                   </div>
                   <div class="form__field">
                     <label class="form__field__label" for="surname">Surname</label>
-                    <div class="form__field__input-wrapper">
-                      <input class="form__field__input" type="text" name="surname" id="surname" value="Dicaprio" required>
-                    </div>
+                    <input class="form__field__input" type="text" name="surname" id="surname" value="Dicaprio" required>
                   </div>
                   <div class="form__field">
                     <label class="form__field__label" for="email">E-mail</label>
-                    <div class="form__field__input-wrapper">
-                      <input class="form__field__input" type="email" name="email" id="email" value="leo@gmail.com" required>
-                    </div>
+                    <input class="form__field__input" type="email" name="email" id="email" value="leo@gmail.com" required>
                   </div>
                   <div class="form__field">
                     <label class="form__field__label" for="phone">Phone number</label>
-                    <div class="form__field__input-wrapper">
-                      <input class="form__field__input" type="text" name="phone" id="phone" value="+1 432 55 00 44" required>
-                    </div>
+                    <input class="form__field__input" type="text" name="phone" id="phone" value="+1 432 55 00 44" required>
                   </div>
                 </div>
               </fieldset>
@@ -370,21 +362,15 @@
                 <div class="col-sm-11 col-md-9 col-lg-6 col-xl-5">
                   <div class="form__field">
                     <label class="form__field__label" for="skype">Skype</label>
-                    <div class="form__field__input-wrapper">
-                      <input class="form__field__input" type="text" name="skype" id="skype" value="Leonardo.D">
-                    </div>
+                    <input class="form__field__input" type="text" name="skype" id="skype" value="Leonardo.D">
                   </div>
                   <div class="form__field">
                     <label class="form__field__label" for="icq">ICQ</label>
-                    <div class="form__field__input-wrapper">
-                      <input class="form__field__input" type="text" name="icq" id="icq">
-                    </div>
+                    <input class="form__field__input" type="text" name="icq" id="icq">
                   </div>
                   <div class="form__field">
                     <label class="form__field__label" for="msn">Msn</label>
-                    <div class="form__field__input-wrapper">
-                      <input class="form__field__input" type="text" name="msn" id="msn">
-                    </div>
+                    <input class="form__field__input" type="text" name="msn" id="msn">
                   </div>
                 </div>
               </fieldset>
@@ -392,9 +378,7 @@
                 <div class="col-sm-11 col-md-9 col-lg-6 col-xl-5">
                   <div class="form__field">
                     <label class="form__field__label" for="wallet">Wallet</label>
-                    <div class="form__field__input-wrapper">
-                      <input class="form__field__input" type="text" name="wallet" id="wallet">
-                    </div>
+                    <input class="form__field__input" type="text" name="wallet" id="wallet">
                   </div>
                 </div>
               </fieldset>
@@ -402,17 +386,13 @@
                 <div class="col-sm-11 col-md-9 col-lg-6 col-xl-5">
                   <div class="form__field">
                     <label class="form__field__label" for="password">Password</label>
-                    <div class="form__field__input-wrapper">
-                      <i class="icon-password password-icon"></i>
-                      <input class="form__field__input form__field__input--password" type="password" name="password" id="password" required>
-                    </div>
+                    <i class="icon-password"></i>
+                    <input class="form__field__input form__field__input--password" type="password" name="password" id="password" required>
                   </div>
                   <div class="form__field">
                     <label class="form__field__label" for="repeat">Repeat</label>
-                    <div class="form__field__input-wrapper">
-                      <i class="icon-password password-icon"></i>
-                      <input class="form__field__input form__field__input--password" type="password" name="repeat" id="repeat" required>
-                    </div>
+                    <i class="icon-password"></i>
+                    <input class="form__field__input form__field__input--password" type="password" name="repeat" id="repeat" required>
                   </div>
                 </div>
               </fieldset>
@@ -423,12 +403,57 @@
           </section>
         </main>
         <div class="overlay" id="overlay">
-            <div class="modal" id="myModal">
+            <div class="modal" id="modal-quit">
                 <div class="btn-close js--close-modal">x</div>
-                <h4>Modal world</h4>
-                <p>Lorem ipsum dolor sit amet...</p>
-
-                <button class="js--close-modal">Okay</button>
+                <span class="table__header">Are you sure you want to quit?</span>
+                <div class="btn--modal">
+                    <button class="btn btn--quit js--close-modal">Cancel</button>
+                    <button class="btn btn--quit">Quit</button>
+                </div>
+            </div>
+            <div class="modal" id="modal-chat">
+                <div class="btn-close js--close-modal">x</div>
+                <header class="main__section__row main__section__row--left">
+                    <h1>ONLINE CHAT WITH YOUR PERSONAL MANAGER</h1>
+                </header>
+                <div class="chat-manager">
+                    <div class="notif">
+                        <img src="./images/photo.png" alt="manager avatar">
+                        <div class="notif__status--chat notif__status--l notif__status--active"></div>
+                        <span class="table__header">Mikhael E.</span>
+                    </div>
+                </div>
+                <div class="chat-quotes">
+                    <div class="c-box chat-box--M">
+                        Hello. Can I help you?
+                    </div>
+                    <div class="c-box chat-box--U">
+                        Hello! I would like to know about Postback.
+                    </div>
+                    <div class="c-box chat-box--M">
+                        Ok. 5 min...
+                    </div>
+                </div>
+                <div class="form-chat">
+                    <i class="icon-message icon-c"></i>
+                    <input class="chat-input" type="text" name="chat-message" id="chat-message" placeholder="Enter the message..." required>
+                    <button class="btn btn--chat">Send</button>
+                </div>
+            </div>
+            <div class="modal" id="modal-login">
+                <div class="btn-close js--close-modal">x</div>
+                <header class="main__section__row main__section__row--left">
+                    <h1>LOGIN</h1>
+                  </header>
+                <div class="form__field__input-wrapper input-icons">
+                    <i class="icon-profile i--l"></i>
+                    <input class="form__field__input--modal" type="text" name="login" id="login" placeholder="login name" required>
+                </div>
+                <div class="form__field__input-wrapper input-icons">
+                    <i class="icon-password i--p"></i>
+                    <input class="form__field__input--modal" type="password" name="password" id="password" placeholder="password" required>
+                </div>
+                <button class="btn btn--login js--close-modal">Enter</button>
             </div>
         </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>

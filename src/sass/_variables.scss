@@ -9,9 +9,6 @@ $color-greys-d: #747d8c;
 $color-link: #5352ed;
 $color-warning: #833471;
 $color-warning-l: #6F1E51;
-$color-success: #9980FA;
-$color-success-l: #D980FA;
-$color-success-xl: #FDA7DF;
 $color-danger: #ff3838;
 $color-danger-l: #e84118;
 $color-danger-xl: #c23616;
@@ -51,6 +48,7 @@ $size-upper-bar: 60px;
 $size-table: 620px;
 
 /*Breakpoints */
-$sm: 600px;
+$sm: 500px;
 $mobile: 768px;
+$sm-height: 669px;
 $sidebar-max: 736px;

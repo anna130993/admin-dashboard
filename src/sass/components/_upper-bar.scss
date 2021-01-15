@@ -49,16 +49,16 @@
   }
 }
 
-@media only screen and (min-width: $mobile) and (min-height: $sidebar-max) {
+@media only screen and (min-width: $sm) and (min-height: $sm-height) {
   .upper-bar {
     background-color: $color-light;
     @include flex (row, center, flex-end);
     border-bottom: $border-style $color-greys-l;
 
     &__button {
-      padding: 0 $padding-sm;
+      background-color: $color-light;
+      padding: 0 10px;
       height: 100%;
-      border-left: $border-style $color-greys-l;
       flex: 0 0 auto;
 
       &:hover {

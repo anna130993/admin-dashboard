@@ -1,0 +1,14 @@
+.personal {
+    .row {
+        justify-content: center;
+        padding: 35px 0;
+    }
+
+    .form__field__label {
+        flex: 2;
+    }
+
+    .form__field__input-wrapper {
+        flex: 3;
+    }
+}

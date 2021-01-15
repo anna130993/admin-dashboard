@@ -1,9 +1,12 @@
 .header {
   background-color: $color-dark;
-  @include flex (row, center, space-between);
-  height: $size-upper-bar;
   width: 100%;
-  padding: 0 $padding-text;
+
+  &__min {
+    @include flex (row, center, space-between);
+    height: $size-upper-bar;
+    padding: 0 $padding-text;
+  }
 
   &__toggle-menu {
     color: $color-greys-l;
@@ -18,10 +21,8 @@
 
 @media only screen and (min-width: $mobile) and (min-height: $sidebar-max) {
   .header {
-    width: $size-sidebar;
-
     &__toggle-menu {
-      display: block;
+      display: none;
     }
   }
 }

@@ -1,15 +1,16 @@
 .upper-bar {
+  @include flex (row, center, space-between);
+  flex-wrap: wrap;
+
   &__button {
-    @extend .sidebar__section;
     @include flex (row, center, space-evenly);
-    padding-bottom: $padding-text/4;
-    border-top: none;
-    border-right: none;
-    border-left: none;
+    padding: $padding-text/4;
+    border: none;
     font-weight: $font-regular;
     background-color: inherit;
     outline: none;
-    width: 100%;
+    flex: 1 1 auto;
+    min-width: $single-line-height - 5px;
 
     &:hover {
       background-color: transparentize($color-greys-d, 0.8);
@@ -27,6 +28,10 @@
 
     &__item {
       padding: $padding-sm/2;
+
+      p {
+        margin: 0;
+      }
     }
   }
 
@@ -54,13 +59,11 @@
       padding: 0 $padding-sm;
       height: 100%;
       border-left: $border-style $color-greys-l;
-      border-bottom: none;
-      width: auto;
+      flex: 0 0 auto;
 
       &:hover {
         background-color: $color-greys-xl;
-        color: $color-header;
-
+        color: $color-light;
       }
     }
   }

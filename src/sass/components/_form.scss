@@ -1,0 +1,72 @@
+.form {
+    &__input-group {
+        border-bottom: $border-style $color-greys-l;
+    }
+
+    &__field {
+        @include flex (row, center, space-between);
+        padding: $padding-text/2;
+
+        &__label {
+            @extend h2;
+            cursor: pointer;
+        }
+
+        &__input {
+            border: 1px solid $color-greys-l;
+            border-radius: $radius;
+            cursor: pointer;
+            width: 100%;
+
+            &::placeholder {
+                color: $color-greys;
+            }
+
+            &:hover {
+                border-color: $color-greys-d;
+                color: $color-dark;
+
+                &::placeholder {
+                    outline-color: $color-dark;
+                }
+            }
+
+            &:focus {
+                outline-color: $color-greys-d;
+            }
+
+            &--password {
+                padding-left: 51px;
+            }
+        }
+
+        &__input-wrapper {
+            position: relative;
+
+            &:hover {
+                .password-icon {
+                    color: $color-dark;
+                }
+            }
+        }
+    }
+
+    .invalid {
+        border: 2px solid $color-danger;
+        outline: $color-danger;
+
+        &:hover {
+            border-color: $color-danger;
+        }
+    }
+
+    .password-icon {
+        z-index: 1;
+        color: $color-greys;
+        position: absolute;
+        top: 50%;
+        left: $padding-sm;
+        transform: translateY(-50%);
+        pointer-events: none;
+    }
+}

@@ -12,90 +12,90 @@
 </head>
 <body>
     <header class="header">
-      <img src="./images/logo.png" alt="Just do it">
-      <a class="header__toggle-menu fas fa-bars"></a>
+        <div class="header__min">
+            <img src="./images/logo.png" alt="Just do it">
+            <a class="header__toggle-menu fas fa-bars"></a>
+        </div>
+        <div class="drop-down">
+            <div class="sidebar">
+                <nav class="sidebar__section sidebar__section--first">
+                    <a class="sidebar__menu-item" href="#general">
+                        <i class="icon-general"></i>
+                        <span>General</span>
+                    </a>
+                    <a class="sidebar__menu-item" href="#details">
+                        <i class="icon-details"></i>
+                        <span>Details</span>
+                    </a>
+                    <a class="sidebar__menu-item" href="#links">
+                        <i class="icon-links"></i>
+                        <span>Links</span>
+                    </a>
+                    <a class="sidebar__menu-item" href="#banners">
+                        <i class="icon-banners"></i>
+                        <span>Banners</span>
+                    </a>
+                    <a class="sidebar__menu-item" href="#personal">
+                        <i class="icon-personaldata"></i>
+                        <span>Personal data</span>
+                    </a>
+                    <a class="sidebar__menu-item" href="#payout">
+                        <i class="icon-payout"></i>
+                        <span>Payout</span>
+                    </a>
+                    <a class="sidebar__menu-item" href="#postback">
+                        <i class="icon-postback"></i>
+                        <span>Postback</span>
+                    </a>
+                </nav>
+                <section class="sidebar__section sidebar__section--left">
+                    <h1 class="sidebar__section__title">Your manager</h1>
+                    <div class="sidebar__manager">
+                        <div class="notif">
+                            <img src="./images/photo.png" alt="manager avatar">
+                            <div class="notif__status notif__status--big notif__status--active"></div>
+                        </div>
+                        <a href="#">Mikhael E.</a>
+                    </div>
+                </section>
+            </div>
+            <nav class="upper-bar">
+                <a class="upper-bar__button">
+                    <div class="upper-bar__button__item">
+                        <i class="icon-wallet upper-bar__icon"></i>
+                    </div>
+                    <div class="upper-bar__button__item">
+                        <div class="upper-bar__balance">
+                            $1,500.00
+                        </div>
+                    </div>
+                    <div class="upper-bar__button__item">
+                        <i class="icon-arrow-down upper-bar__icon upper-bar__icon--sm"></i>
+                    </div>
+                </a>
+                <a class="upper-bar__button">
+                    <div class="upper-bar__button__item notif">
+                        <i class="icon-notification upper-bar__icon"></i>
+                        <div class="notif__status notif__status--busy"></div>
+                    </div>
+                </a>
+                <a class="upper-bar__button">
+                    <div class="upper-bar__button__item">
+                        <i class="icon-profile upper-bar__icon"></i>
+                    </div>
+                    <div class="upper-bar__button__item">
+                        <p>Leonardo Dicaprio</p>
+                    </div>
+                </a>
+                <a class="upper-bar__button">
+                    <div class="upper-bar__button__item">
+                        <i class="icon-quit upper-bar__icon"></i>
+                    </div>
+                </a>
+            </nav>
+        </div>
     </header>
-    <aside>
-      <div class="sidebar">
-        <nav class="sidebar__section sidebar__section--first">
-          <div class="sidebar__menu">
-              <a class="sidebar__menu-item" href="#general">
-                <i class="icon-general"></i>
-                <span>General</span>
-              </a>
-              <a class="sidebar__menu-item" href="#details">
-                <i class="icon-details"></i>
-                <span>Details</span>
-              </a>
-              <a class="sidebar__menu-item" href="#links">
-                <i class="icon-links"></i>
-                <span>Links</span>
-              </a>
-              <a class="sidebar__menu-item" href="#banners">
-                <i class="icon-banners"></i>
-                <span>Banners</span>
-              </a>
-              <a class="sidebar__menu-item" href="#personal-data">
-                <i class="icon-personaldata"></i>
-                <span>Personal data</span>
-              </a>
-              <a class="sidebar__menu-item" href="#payout">
-                <i class="icon-payout"></i>
-                <span>Payout</span>
-              </a>
-              <a class="sidebar__menu-item" href="#postback">
-                <i class="icon-postback"></i>
-                <span>Postback</span>
-              </a>
-            </div>
-        </nav>
-        <section class="sidebar__section">
-          <h1 class="sidebar__section__title">Your manager</h1>
-          <div class="sidebar__manager">
-            <div class="notif">
-              <img src="./images/photo.png" alt="manager avatar">
-              <div class="notif__status notif__status--big notif__status--active"></div>
-            </div>
-            <a href="#">Mikhael E.</a>
-          </div>
-        </section>
-      </div>
-      <nav class="upper-bar">
-        <button class="upper-bar__button">
-          <div class="upper-bar__button__item">
-            <i class="icon-wallet upper-bar__icon"></i>
-          </div>
-          <div class="upper-bar__button__item">
-            <div class="upper-bar__balance">
-              $1,500.00
-            </div>
-          </div>
-          <div class="upper-bar__button__item">
-            <i class="icon-arrow-down upper-bar__icon upper-bar__icon--sm"></i>
-          </div>
-        </button>
-        <button class="upper-bar__button">
-          <div class="upper-bar__button__item notif">
-            <i class="icon-notification upper-bar__icon"></i>
-            <div class="notif__status notif__status--busy"></div>
-          </div>
-        </button>
-        <button class="upper-bar__button">
-          <div class="upper-bar__button__item">
-            <i class="icon-profile upper-bar__icon"></i>
-          </div>
-          <div class="upper-bar__button__item">
-            <a href="#">Leonardo Dicaprio</a>
-          </div>
-        </button>
-        <button class="upper-bar__button">
-          <div class="upper-bar__button__item">
-            <i class="icon-quit upper-bar__icon"></i>
-          </div>
-        </button>
-      </nav>
-    </aside>
-        <main>
+    <main>
         <section id="statistics" class="main__section statistics">
             <div class="main__section__row main__section__row--left">
                 <h1>GENERAL STATISTICS</h1>
@@ -137,8 +137,8 @@
             <div class="main__section__row main__section__row--naked">
                 <div class="col-sm-12 col-lg-10 col-xl-8 chart__wrapper">
                     <figure class="chart">
-                        <figcaption class="chart__title">Earnings chart</figcaption>
-                        <img class="chart__visual" src="./images/graph.png" alt="graph">
+                        <span class="table__header">Earnings chart</span>
+                        <canvas id="myChart"></canvas>
                     </figure>
                 </div>
             </div>
@@ -333,7 +333,105 @@
                 </div>
             </div>
         </section>
+        <section id="personal" class="main__section personal">
+            <header class="main__section__row main__section__row--left">
+              <h1>Personal data</h1>
+            </header>
+            <form novalidate class="form">
+              <fieldset class="row form__input-group">
+                <div class="col-sm-11 col-md-9 col-lg-6 col-xl-5">
+                  <div class="form__field">
+                    <label class="form__field__label" for="name">Name</label>
+                    <div class="form__field__input-wrapper">
+                      <input class="form__field__input" type="text" name="name" id="name" value="Leonardo" required>
+                    </div>
+                  </div>
+                  <div class="form__field">
+                    <label class="form__field__label" for="surname">Surname</label>
+                    <div class="form__field__input-wrapper">
+                      <input class="form__field__input" type="text" name="surname" id="surname" value="Dicaprio" required>
+                    </div>
+                  </div>
+                  <div class="form__field">
+                    <label class="form__field__label" for="email">E-mail</label>
+                    <div class="form__field__input-wrapper">
+                      <input class="form__field__input" type="email" name="email" id="email" value="leo@gmail.com" required>
+                    </div>
+                  </div>
+                  <div class="form__field">
+                    <label class="form__field__label" for="phone">Phone number</label>
+                    <div class="form__field__input-wrapper">
+                      <input class="form__field__input" type="text" name="phone" id="phone" value="+1 432 55 00 44" required>
+                    </div>
+                  </div>
+                </div>
+              </fieldset>
+              <fieldset class="row form__input-group">
+                <div class="col-sm-11 col-md-9 col-lg-6 col-xl-5">
+                  <div class="form__field">
+                    <label class="form__field__label" for="skype">Skype</label>
+                    <div class="form__field__input-wrapper">
+                      <input class="form__field__input" type="text" name="skype" id="skype" value="Leonardo.D">
+                    </div>
+                  </div>
+                  <div class="form__field">
+                    <label class="form__field__label" for="icq">ICQ</label>
+                    <div class="form__field__input-wrapper">
+                      <input class="form__field__input" type="text" name="icq" id="icq">
+                    </div>
+                  </div>
+                  <div class="form__field">
+                    <label class="form__field__label" for="msn">Msn</label>
+                    <div class="form__field__input-wrapper">
+                      <input class="form__field__input" type="text" name="msn" id="msn">
+                    </div>
+                  </div>
+                </div>
+              </fieldset>
+              <fieldset class="row form__input-group">
+                <div class="col-sm-11 col-md-9 col-lg-6 col-xl-5">
+                  <div class="form__field">
+                    <label class="form__field__label" for="wallet">Wallet</label>
+                    <div class="form__field__input-wrapper">
+                      <input class="form__field__input" type="text" name="wallet" id="wallet">
+                    </div>
+                  </div>
+                </div>
+              </fieldset>
+              <fieldset class="row form__input-group">
+                <div class="col-sm-11 col-md-9 col-lg-6 col-xl-5">
+                  <div class="form__field">
+                    <label class="form__field__label" for="password">Password</label>
+                    <div class="form__field__input-wrapper">
+                      <i class="icon-password password-icon"></i>
+                      <input class="form__field__input form__field__input--password" type="password" name="password" id="password" required>
+                    </div>
+                  </div>
+                  <div class="form__field">
+                    <label class="form__field__label" for="repeat">Repeat</label>
+                    <div class="form__field__input-wrapper">
+                      <i class="icon-password password-icon"></i>
+                      <input class="form__field__input form__field__input--password" type="password" name="repeat" id="repeat" required>
+                    </div>
+                  </div>
+                </div>
+              </fieldset>
+              <div class="row">
+                <button class="btn" type="submit">save</button>
+              </div>
+            </form>
+          </section>
         </main>
+        <div class="overlay" id="overlay">
+            <div class="modal" id="myModal">
+                <div class="btn-close js--close-modal">x</div>
+                <h4>Modal world</h4>
+                <p>Lorem ipsum dolor sit amet...</p>
+
+                <button class="js--close-modal">Okay</button>
+            </div>
+        </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
     <script src="./js/script.js" type="module"></script>
 </body>
 </html>
